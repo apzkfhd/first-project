@@ -33,10 +33,10 @@ const swTal = new Swiper(".tal-list", {
   loopAdditionalSlides: 4,
   spaceBetween: 40,
   centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
 });
 //
 const growTitle = document.querySelectorAll(".fade-up");
