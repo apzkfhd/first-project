@@ -1,0 +1,142 @@
+/*  */
+/* font - import */
+/* 잘난체 */
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/Jalnan/Jalnan.css");
+/* spoqa */
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+/* BBH Bartle */
+@import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap");
+/*  */
+:root {
+  --bg-color: #fef4f4;
+  /* primary color - Red */
+  --r100: #fef4f4;
+  --r200: #fcc3c7;
+  --r300: #fa9299;
+  --r400: #f7626c;
+  --r500: #f5313e;
+  --r600: #e80b1a;
+  --r700: #b70914;
+  --r800: #86070f;
+  --r900: #56040a;
+
+  /* primary color - Blue */
+  --b100: #fef4f4;
+  --b200: #c3c6fc;
+  --b300: #9298fa;
+  --b400: #6269f7;
+  --b500: #313bf5;
+  --b600: #0b16e8;
+  --b700: #0912b7;
+  --b800: #070d86;
+  --b900: #040856;
+
+  /* neon color */
+  --n000: #fbfff3;
+  --n200: #e9ffc0;
+  --n300: #d8ff8d;
+  --n400: #c6ff5a;
+  --n500: #b5ff27;
+  --n600: #a0f300;
+  --n700: #7ec000;
+  --n800: #5d8d00;
+  --n900: #3b5a00;
+  /* secondary color */
+  /* newtral color */
+  --white: #fff;
+  --black: #000;
+  --g100: #fcfcfc;
+  --g200: #e2e2e2;
+  --g300: #c9c9c9;
+  --g400: #afafaf;
+  --g500: #969696;
+  --g600: #7c7c7c;
+  --g700: #636363;
+  --g800: #494949;
+  --g900: #303030;
+
+  /* size */
+  --xx-small: 4px;
+  --x-small: 8px;
+  --small: 12px;
+  --medium: 14px;
+  --large: 16px;
+  --x-large: 20px;
+  --xx-large: 24px;
+  --xxx-large: 32px;
+  --xxxx-large: 36px;
+  --extra: 48px;
+  --big: 56px;
+
+  /* size system */
+  --heading1: var(--extra);
+  --heading2: var(--xxxx-large);
+  --heading3: var(--xx-large);
+  --body: var(--large);
+  --caption: var(--medium);
+
+  /* 이미지 설정값 */
+  --hero-media: 950px;
+  --lang-img: 28px;
+
+  /*  */
+  --title: 64px;
+  /*  */
+  --btn-text: 30px;
+  --btn-width: 260px;
+  --btn-height: 70px;
+  --guide-btn-width: 320px;
+  --guide-btn-height: 70px;
+  /*  */
+  --partnership-radius: 25px;
+}
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*  */
+html,
+body {
+  /* 가로 스크롤 방지 */
+  overflow-x: hidden;
+  /* background-color: var(--bg-color); */
+  background-color: var(--black);
+  /* font */
+  /* spoqa */
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  /* BBH */
+  /* font-family: "BBH Bartle", sans-serif; */
+  /* 잘난체 */
+  /* font-family: "Jalnan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  /* Archivo  */
+  /*  font-family: "Archivo Black", sans-serif; */
+  font-weight: 400;
+  font-size: var(--large);
+  line-height: 1.6;
+  letter-spacing: 0px;
+  color: var(--white);
+  /*  */
+  text-size-adjust: 100%;
+  /* 부드럽게 이동 */
+  scroll-behavior: smooth;
+}
+/*  */
+ul,
+li {
+  list-style: none;
+}
+/*  */
+a {
+  display: block;
+  color: var(--black);
+  text-decoration: none;
+}
+/*  */
+img {
+  border: 0;
+  /* 세로 중앙 정렬 */
+  vertical-align: middle;
+}
