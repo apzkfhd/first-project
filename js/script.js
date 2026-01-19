@@ -29,12 +29,12 @@ langListElement.innerHTML = langTag;
 // tal Swiper
 const swTal = new Swiper(".tal-list", {
   loop: true,
-  slidesPerView: "auto",
-  loopAdditionalSlides: 4,
-  spaceBetween: 40,
+  slidesPerView: 5,
+  // loopAdditionalSlides: 4,
+  spaceBetween: 475,
   centeredSlides: true,
   // autoplay: {
-  //   delay: 2500,
+  //   delay: 2000,
   //   disableOnInteraction: false,
   // },
 });
@@ -51,7 +51,7 @@ const observer = new IntersectionObserver(
   },
   {
     threshold: 0.2, // 20% 보이면 실행
-  }
+  },
 );
 growTitle.forEach((el) => observer.observe(el));
 //
