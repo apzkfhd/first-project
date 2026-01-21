@@ -2,6 +2,8 @@
 /* font - import */
 /* 잘난체 */
 @import url("https://cdn.jsdelivr.net/gh/fonts-archive/Jalnan/Jalnan.css");
+/* 잘난체 고딕 */
+@import url("https://cdn.jsdelivr.net/gh/fonts-archive/JalnanGothic/JalnanGothic.css");
 /* spoqa */
 @import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
 /* Arc */
@@ -83,10 +85,8 @@
   --title: 64px;
   /*  */
   --btn-text: 30px;
-  --btn-width: 260px;
-  --btn-height: 70px;
-  --guide-btn-width: 320px;
-  --guide-btn-height: 70px;
+  --btn-width: 240px;
+  --btn-height: 60px;
   /*  */
   --partnership-radius: 25px;
 }
@@ -95,9 +95,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 /*  */
-html,
+section {
+  max-width: 100vw;
+  overflow-x: clip;
+}
 body {
   /* 가로 스크롤 방지 */
   overflow-x: hidden;
@@ -106,22 +110,28 @@ body {
   /* font */
   /* spoqa */
   font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: var(--large);
   /* BBH */
   /* font-family: "BBH Bartle", sans-serif; */
   /* 잘난체 */
   /* font-family: "Jalnan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  /* 잘난체 고딕 */
+  /* font-family: 'Jalnan Gothic'; */
   /* Archivo  */
   /*  font-family: "Archivo Black", sans-serif; */
   font-weight: 400;
-  font-size: var(--large);
   line-height: 1.6;
-  letter-spacing: 0px;
   color: var(--white);
-  /*  */
-  text-size-adjust: 100%;
+  letter-spacing: 0px;
   /* 부드럽게 이동 */
   scroll-behavior: smooth;
+  /*  */
+  text-size-adjust: 100%;
+}
+/*  */
+body {
+  /* overflow-x: hidden; */
 }
 /*  */
 ul,
