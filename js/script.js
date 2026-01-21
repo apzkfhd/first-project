@@ -39,6 +39,7 @@ const swTal = new Swiper(".tal-list", {
   },
 });
 //
+//
 const growTitle = document.querySelectorAll(".fade-up");
 //
 const observer = new IntersectionObserver(
@@ -50,7 +51,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.2, // 20% 보이면 실행
+    threshold: 0.6, // 60% 보이면 실행
   },
 );
 growTitle.forEach((el) => observer.observe(el));
