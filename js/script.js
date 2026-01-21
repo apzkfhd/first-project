@@ -31,7 +31,7 @@ const swTal = new Swiper(".tal-list", {
   loop: true,
   slidesPerView: 5,
   // loopAdditionalSlides: 4,
-  spaceBetween: 400,
+  spaceBetween: 150,
   centeredSlides: true,
   autoplay: {
     delay: 2000,
