@@ -1883,6 +1883,17 @@
   .grow-section .inner .grow-title .title h2 {
     font-size: 18px;
   }
+  .grow-section .inner .grow-title .eye-sticker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transform: translate(-50%, 80%);
+  }
+  .grow-section .inner .grow-title .eye-sticker img {
+    width: 90px;
+    height: 75px;
+  }
   .grow-section .inner .grow-title .sub-title .cumulative {
     width: 180px;
     height: 99px;
