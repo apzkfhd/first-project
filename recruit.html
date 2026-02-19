@@ -1,21 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>여기어때 채용</title>
     <!--  -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/recruit.css" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-    <!-- JS -->
-    <script src="js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="js/recruit.js" defer></script>
     <!--  -->
   </head>
   <body>
@@ -23,7 +29,9 @@
       <header class="header">
         <div class="inner">
           <div class="logo">
-            <a href="recruit.html"> 이미지냐 텍스트냐 </a>
+            <a href="index.html">
+              <img src="assets/icons/logo.png" alt="logo-img" />
+            </a>
           </div>
           <nav class="nav">
             <ul>
@@ -32,7 +40,7 @@
               <li><a href="#">능력</a></li>
               <li>
                 <a href="#">
-                  <div>채용공고</div>
+                  <div class="recruit-btn">채용공고</div>
                 </a>
               </li>
             </ul>
@@ -40,46 +48,389 @@
         </div>
       </header>
       <!--  -->
-      <section class="life-section">
+      <section class="support-section">
         <div class="inner">
-          <div class="life-title">
-            <div class="title"></div>
-            <div class="sub-title"></div>
+          <div class="support-title">
+            <div class="title">
+              <h2>
+                개인의 몰입과 <br />
+                성장을 최우선으로
+              </h2>
+            </div>
+            <div class="sub-title">
+              <img
+                src="assets/recruits/support-back-title.png"
+                alt="support-back-title"
+              />
+            </div>
           </div>
           <!--  -->
-          <div class="life-img"></div>
+          <div class="focus-card">
+            <div class="card-info">
+              <div class="card-title">
+                <p>
+                  An Environment <br />
+                  for Focus
+                </p>
+              </div>
+              <div class="caption">
+                <p>
+                  월요일 오후 1시 출근 <br />
+                  스마트 워크 제도 <br />
+                  시차 출퇴근제
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="figure">
+              <img src="assets/recruits/focus-img.png" alt="focus-img" />
+            </div>
+            <!--  -->
+          </div>
+          <div class="grow-card">
+            <div class="card-info">
+              <div class="card-title">
+                <p>
+                  All the Support <br />
+                  You Need to Grow
+                </p>
+              </div>
+              <div class="caption">
+                <p>
+                  업무 도서비 지원 <br />
+                  온/오프라인 교육 지원<br />
+                  맞춤형 워크샵 프로그램
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="figure">
+              <img src="assets/recruits/grow-img.png" alt="grow-img" />
+            </div>
+            <!--  -->
+          </div>
+          <div class="reward-card">
+            <div class="card-info">
+              <div class="card-title">
+                <p>Rewards Without Limits</p>
+              </div>
+              <div class="caption">
+                <p>
+                  웰컴키트 & 쿠폰팩 지급 <br />
+                  여기어때 여가포인트 지급 <br />
+                  명절 상품권 지급
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="figure">
+              <img src="assets/recruits/reward-img.png" alt="reward-img" />
+            </div>
+            <!--  -->
+          </div>
           <!--  -->
-          <div class="life-btn"></div>
+          <div class="support-btn">
+            <a href="#">
+              <span> 더 많은 복지 보러가기 → </span>
+            </a>
+          </div>
+          <!--  -->
         </div>
       </section>
       <!--  -->
-      <section class="daily-section">
+      <section class="video-section">
         <div class="inner">
-          <div class="daily-title">
-            <div class="title"></div>
-            <div class="sub-title"></div>
-          </div>
-          <img class="daily-img" />
-        </div>
-        <div class="long-shorts">
-          <div class="ls-top">
-            <div class="ls-title">
-              <div class="long-title">Long-form</div>
-              <div class="shorts-title">Shorts</div>
+          <div class="video-top">
+            <div class="video-title">
+              <div class="title">
+                <h2>
+                  From Our <br />
+                  Channel
+                </h2>
+                <div class="title-sticker">
+                  <img
+                    src="assets/recruits/star-sticker.png"
+                    alt="star-sticker"
+                  />
+                </div>
+                <div class="bar">
+                  <img src="assets/recruits/title-bar.png" alt="title-bar" />
+                </div>
+              </div>
+              <div class="sub-title">
+                <p>유튜브에서 여기어때의 이야기를 만나보세요</p>
+              </div>
             </div>
-            <div class="shortcut-btn">
-              <a href="#">Youtube 채널 바로가기</a>
+            <!--  -->
+            <div class="long-form-info">
+              <div class="long-form-top">
+                <div class="title">
+                  <p>Long-form</p>
+                </div>
+                <div class="bar"></div>
+                <!--  -->
+                <div class="long-form-media">
+                  <iframe
+                    src="https://www.youtube.com/embed/D4MjY21N8rw"
+                    frameborder="0"
+                    allow="autoplayl; fullscreen"
+                  ></iframe>
+                </div>
+                <!--  -->
+                <div class="long-form-btn">
+                  <a href="#">
+                    <p>Youtube 채널 보러가기</p>
+                  </a>
+                  <div class="eye-sticker">
+                    <img
+                      src="assets/images/eye-sticker-reverse.png"
+                      alt="eye-sticker"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="ls-list"></div>
+          <!--  -->
+          <div class="video-bottom">
+            <div class="long-form-bot">
+              <div class="bot-title">
+                <div class="title">
+                  <p>Shorts</p>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <!-- short-swiper -->
+              <!-- Swiper -->
+              <div class="short-wrap">
+                <div class="arrows-box">
+                  <img
+                    src="assets/recruits/arrow-sticker.png"
+                    alt="arrow-sticker"
+                  />
+                </div>
+                <div class="swiper short-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="short-img">
+                        <img src="assets/recruits/short-1.png" alt="short-1" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="short-img">
+                        <img src="assets/recruits/short-2.png" alt="short-2" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="short-img">
+                        <img src="assets/recruits/short-3.png" alt="short-3" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!--  -->
-      <section class="carousel-section"></section>
+      <section class="carousel-section">
+        <div class="img-inner">
+          <div class="img-track">
+            <div class="img-line">
+              <img src="assets/images/carousel.png" alt="carousel-img" />
+            </div>
+            <div class="img-line">
+              <img src="assets/images/carousel.png" alt="carousel-img" />
+            </div>
+          </div>
+        </div>
+      </section>
       <!--  -->
-      <section class="process-section"></section>
+      <section class="carousel-section-seconde">
+        <div class="img-inner">
+          <div class="img-track">
+            <div class="img-line">
+              <img src="assets/images/carousel.png" alt="carousel-img" />
+            </div>
+            <div class="img-line">
+              <img src="assets/images/carousel.png" alt="carousel-img" />
+            </div>
+          </div>
+        </div>
+      </section>
       <!--  -->
-      <section class="footer-section"></section>
+      <section class="process-section">
+        <div class="inner">
+          <div class="info">
+            <div class="process-title">
+              <div class="title-container">
+                <div class="deep">
+                  <div class="badge">
+                    <p>~2014</p>
+                  </div>
+                  <h2>ABOUT US</h2>
+                </div>
+                <div class="sub-title">
+                  <p>
+                    열정을 함께한 <br />
+                    우리들의 이야기
+                  </p>
+                </div>
+              </div>
+              <div class="process-sticker">
+                <img
+                  src="assets/recruits/process-sticker.png"
+                  alt="process-sticker"
+                />
+              </div>
+            </div>
+            <div class="caption">
+              <div class="title">
+                <p>우리가 걸어온 여정</p>
+              </div>
+              <div class="sup-title" style="text-align: center">
+                <p>
+                  2014년에 처음 설립된 여기어때는 2022년 기준 누적 다운로드
+                  2,970만건 이상으로 <br />국민 5명 중 3명이 사용하는 국민
+                  앱으로 성장하였습니다. 그때까지의 여정 <br />
+                  여기어때의 모든 직원들이 서로 협력하고 도우며 함께한 여정을
+                  블로그에 담았습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper process-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="process-thumbnail">
+                    <img
+                      src="assets/recruits/process-img-1.png"
+                      alt="process-img-1"
+                    />
+                  </div>
+                  <div class="card-info">
+                    <div class="card-title">
+                      <div class="title">
+                        <p>여기어때 신입 계발자의 암호화 서비스</p>
+                      </div>
+                      <div class="sub-title">
+                        <p>Backend Engineer / 박이슬(Show)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="process-thumbnail">
+                    <img
+                      src="assets/recruits/process-img-2.png"
+                      alt="process-img-2"
+                    />
+                  </div>
+                  <div class="card-info">
+                    <div class="card-title">
+                      <div class="title">
+                        <p>여기어때 항공 오픈 이야기</p>
+                      </div>
+                      <div class="sub-title">
+                        <p>Product Owner / 방시정(Leanna)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="process-thumbnail">
+                    <img
+                      src="assets/recruits/process-img-3.png"
+                      alt="process-img-3"
+                    />
+                  </div>
+                  <div class="card-info">
+                    <div class="card-title">
+                      <div class="title">
+                        <p>디자인 조직이 성장할 수록 필요한 일</p>
+                      </div>
+                      <div class="sub-title">
+                        <p>UX Designer / 황다원(Shasha)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <!--  -->
+          <div class="spring-one">
+            <img src="assets/icons/spring-icon.png" alt="spring-sticker" />
+          </div>
+          <div class="spring-two">
+            <img src="assets/icons/spring-icon.png" alt="spring-sticker" />
+          </div>
+          <div class="spring-three">
+            <img src="assets/icons/spring-icon.png" alt="spring-sticker" />
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section class="additional-section">
+        <div class="additional-img">
+          <img src="assets/recruits/additional-img.png" alt="additional-img" />
+        </div>
+      </section>
+      <!--  -->
+      <section class="footer-section">
+        <div class="inner">
+          <div class="footer-top">
+            <div class="logo">
+              <p>(주) 여기어때 컴퍼니</p>
+            </div>
+            <div class="caption">
+              <p>recruit@gccompany.co.kr</p>
+            </div>
+            <div class="personal-caption">
+              <p>채용개인정보처리방침</p>
+            </div>
+          </div>
+          <div class="footer-middle">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="assets/recruits/home.png" alt="home"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/recruits/linked.png" alt="linked"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/recruits/instar.png" alt="instar"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/recruits/youtube.png" alt="youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <div class="caption">
+              <p>made with Greeting</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
     </div>
   </body>
 </html>
