@@ -307,10 +307,14 @@
 }
 .video-title .title {
   display: flex;
-  padding: 0 100px;
+  /* padding: 0 100px; */
   height: 100%;
 }
-.video-title .title h2 {
+.vide-title .title img {
+  width: 100%;
+  height: 100%;
+}
+/* .video-title .title h2 {
   font-family: "Archivo Black", sans-serif;
   font-size: 36px;
   line-height: 0.98;
@@ -328,10 +332,9 @@
 }
 .video-title .title .bar {
   position: absolute;
-  /* top: 0px; */
   left: -3%;
   transform: translate(0%, -10%);
-}
+} */
 .video-title .sub-title {
   display: flex;
   height: 100%;
