@@ -1,13 +1,9 @@
-var shortSwiper = new Swiper(".short-swiper", {
+const shortSwiper = new Swiper(".short-swiper", {
   slidesPerView: "auto",
   spaceBetween: 60,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 });
 
-var processSwiper = new Swiper(".process-swiper", {
+const processSwiper = new Swiper(".process-swiper", {
   slidesPerView: "auto",
   spaceBetween: 40,
   grabCursor: true,
